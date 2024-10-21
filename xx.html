@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谢育林的个人简介</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            overflow: hidden;
+        }
+        /* 粒子背景 */
+        
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            z-index: -1;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        /* 容器布局 */
+        
+        .container {
+            z-index: 1;
+            width: 90%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            padding: 20px;
+        }
+        /* 卡片样式 */
+        
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            /* 10% 不透明 */
+            /* 半透明背景 */
+            backdrop-filter: blur(15px);
+            /* 背景模糊 */
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            width: 100%;
+            max-width: 700px;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.7);
+        }
+        /* 文字样式 */
+        
+        h1,
+        h2 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            line-height: 1.6;
+            color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <div class="container">
+            <h1>相亲简介</h1>
+            <h2>谢育林</h2>
+
+            <div class="profile-image">
+                <!-- 引用一张头像图片，可以替换成你自己的图片 -->
+                <img src="https://via.placeholder.com/200" alt="头像">
+            </div>
+
+            <div class="profile-section">
+                <h3>个人简介</h3>
+                <p>大家好，我叫谢育林，目前在北京一家知名的互联网公司担任高级软件工程师，主攻后端开发。自大学毕业以来，已经在这个行业工作了6年，期间参与了多个大型项目的开发，并且多次负责项目的技术架构设计。在工作中，我注重细节、追求技术创新，希望通过技术的力量改变生活。</p>
+            </div>
+
+            <div class="profile-section">
+                <h3>职业与生活的平衡</h3>
+                <p>虽然我从事的是程序员这一高强度、高压力的工作，但我始终坚信生活和工作需要有平衡。平时我会合理安排工作时间，确保在下班后可以有充足的时间进行自我提升与休闲。工作之余，我喜欢读书和思考，特别是关于个人成长和科技创新的书籍。</p>
+            </div>
+
+            <div class="profile-section">
+                <h3>性格与为人</h3>
+                <p>朋友们都说我是一个稳重踏实的人，面对困难能够冷静分析并解决问题，性格随和且乐于助人。虽然工作中的我比较严谨，但私下里还是很幽默的，跟朋友们在一起时会有很多轻松有趣的对话。对待朋友和家人，我十分重视感情，也比较重视承诺，说到做到。</p>
+            </div>
+
+            <div class="profile-section">
+                <h3>兴趣爱好</h3>
+                <p>除了编程之外，我的兴趣爱好也比较广泛。首先，我非常喜欢运动，尤其是跑步和健身，这不仅让我保持身体健康，也让我能够在工作之外放松心情。此外，摄影也是我业余时间的一个爱好，特别是在旅行时，我喜欢用相机捕捉每一个美丽的瞬间。喜欢在假期去不同的地方旅游，感受各地不同的风景和文化。</p>
+                <p>我也是一个电影迷，尤其喜欢经典的科幻片和悬疑片，偶尔也会刷一些网络剧。平时还会玩一些解谜类的游戏，这不仅让我放松，也能锻炼逻辑思维。在美食方面，我不挑剔，但也喜欢自己下厨，尤其喜欢尝试不同的菜式，用美食犒劳自己和朋友。</p>
+            </div>
+
+            <div class="profile-section">
+                <h3>家庭观念与未来规划</h3>
+                <p>我是一个非常重视家庭的人，认为家庭是一个人最重要的依靠。未来希望和另一半能够共同营造一个温暖和睦的家庭，相互理解、相互支持。在事业上，我会继续保持学习和提升，争取在技术领域有更深的造诣，同时也希望未来能够有更多的时间陪伴家人和孩子。</p>
+            </div>
+
+            <div class="profile-section">
+                <h3>择偶标准</h3>
+                <p>我希望未来的伴侣是一位温柔善良、性格开朗的女生。希望我们能够在生活上相互扶持，共同进步。对于未来，我憧憬的是一种彼此关心、共同成长的生活方式。我希望你也有自己的爱好与追求，能理解和尊重彼此的空间。期待可以和你一起在生活中找到属于我们的幸福。</p>
+            </div>
+
+            <div class="footer">
+                <p>Copyright &copy; 2024 谢育林的个人相亲简介</p>
+            </div>
+        </div>
+    </div>
+    <!-- 引入粒子.js库 -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 150,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": ["#ffafbd", "#ffc3a0", "#2193b0", "#6dd5ed", "#ffffff"]
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 6
+                    }
+                },
+                "opacity": {
+                    "value": 0.7,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 2,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 4,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 20,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 8,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "bubble"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 250,
+                        "size": 15,
+                        "duration": 2,
+                        "opacity": 0.8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+
+</body>
+
+</html>
